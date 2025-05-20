@@ -1,0 +1,70 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\yourname\\Desktop\\mcp_helloworld"
+      ]
+    },
+    "google-maps": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-google-maps"
+      ],
+      "env": {
+        "GOOGLE_MAPS_API_KEY": "your_api_key"
+      }
+    },
+    "slack": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-slack"
+      ],
+      "env": {
+        "SLACK_BOT_TOKEN": "your_slack_bot_token",
+        "SLACK_TEAM_ID": "your_team"
+      }
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+   "everything": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-everything"
+      ]
+    },
+   "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    },
+   "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"]
+    },
+   "weather": {
+      "command": "uv",
+            "args": [
+                "--directory",
+                "C:\\Windows\\System32\\weather",
+                "run",
+                "weather.py"
+            ],
+            "env": {
+                "service_key": "your_key"
+      }
+    }
+  }
+}
